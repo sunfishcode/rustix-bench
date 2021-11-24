@@ -1,0 +1,18 @@
+[package]
+name = "rustix-bench"
+version = "0.0.0"
+authors = ["Dan Gohman <dev@sunfishcode.online>"]
+description = "Benchmarking for rustix"
+license = "Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT"
+repository = "https://github.com/sunfishcode/rustix-bench"
+edition = "2018"
+exclude = ["/.github"]
+
+[dev-dependencies]
+criterion = "0.3"
+
+# Add Criterion configuration, as described here:
+# <https://bheisler.github.io/criterion.rs/book/getting_started.html#step-1---add-dependency-to-cargotoml>
+[[bench]]
+name = "mod"
+harness = false
